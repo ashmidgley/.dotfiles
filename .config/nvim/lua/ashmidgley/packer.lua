@@ -55,5 +55,9 @@ return require('packer').startup(function(use)
 
     -- Training.
     use('ThePrimeagen/vim-be-good')
+
+    -- Tmux/nvim navigation using C-hjkl.
+    use('christoomey/vim-tmux-navigator')
+
 end)
 

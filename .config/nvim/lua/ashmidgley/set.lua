@@ -36,3 +36,4 @@ vim.opt.scrolloff = 8
 
 -- Color column width.
 vim.opt.colorcolumn = "80"
+
