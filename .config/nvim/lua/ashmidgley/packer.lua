@@ -59,5 +59,8 @@ return require('packer').startup(function(use)
     -- Tmux/nvim navigation using C-hjkl.
     use('christoomey/vim-tmux-navigator')
 
+    -- GitHub copilot.
+    use('github/copilot.vim')
+
 end)
 
