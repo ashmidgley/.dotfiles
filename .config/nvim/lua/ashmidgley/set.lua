@@ -37,3 +37,5 @@ vim.opt.scrolloff = 8
 -- Color column width.
 vim.opt.colorcolumn = "80"
 
+-- vim-go settings.
+vim.g.go_addtags_transform = "camelcase"

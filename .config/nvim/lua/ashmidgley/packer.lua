@@ -63,6 +63,12 @@ return require("packer").startup(function(use)
 	-- GitHub copilot.
 	use("github/copilot.vim")
 
-	-- Formatters and linting.
+	-- Formatting.
 	use("jose-elias-alvarez/null-ls.nvim")
+
+	-- Go.
+	use("fatih/vim-go")
+
+	-- Splitjoin.
+	use("AndrewRadev/splitjoin.vim")
 end)

@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -169,6 +164,11 @@ _G.packer_plugins = {
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["splitjoin.vim"] = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/splitjoin.vim",
+    url = "https://github.com/AndrewRadev/splitjoin.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -188,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

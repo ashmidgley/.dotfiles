@@ -30,3 +30,7 @@ end)
 -- Copilot tab remap.
 vim.g.copilot_no_tab_map = true
 vim.keymap.set("i", "<C-g>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
+-- vim-go remaps.
+vim.keymap.set("n", "<leader>ct", vim.cmd.GoCoverageToggle)
+vim.keymap.set("n", "<leader>ga", vim.cmd.GoAlternate)
