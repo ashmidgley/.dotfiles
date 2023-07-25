@@ -34,3 +34,9 @@ vim.keymap.set("i", "<C-g>", 'copilot#Accept("<CR>")', { silent = true, expr = t
 -- vim-go remaps.
 vim.keymap.set("n", "<leader>ct", vim.cmd.GoCoverageToggle)
 vim.keymap.set("n", "<leader>ga", vim.cmd.GoAlternate)
+vim.keymap.set("n", "<leader>gt", vim.cmd.GoTest)
+vim.keymap.set("n", "<leader>gr", vim.cmd.GoRun)
+
+-- trouble.
+vim.keymap.set("n", "<leader>tt", vim.cmd.TroubleToggle)
+vim.keymap.set("n", "<leader>tr", vim.cmd.TroubleRefresh)

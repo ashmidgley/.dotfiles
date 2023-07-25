@@ -39,3 +39,6 @@ vim.opt.colorcolumn = "80"
 
 -- vim-go settings.
 vim.g.go_addtags_transform = "camelcase"
+
+-- python3.
+vim.g.python3_host_prog = "/opt/homebrew/bin/python3"

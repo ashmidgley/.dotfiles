@@ -61,7 +61,7 @@ return require("packer").startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 
 	-- GitHub copilot.
-	use("github/copilot.vim")
+	-- use("github/copilot.vim")
 
 	-- Formatting.
 	use("jose-elias-alvarez/null-ls.nvim")
@@ -71,4 +71,8 @@ return require("packer").startup(function(use)
 
 	-- Splitjoin.
 	use("AndrewRadev/splitjoin.vim")
+
+	-- LSP error messages.
+	use("folke/trouble.nvim")
+	use("nvim-tree/nvim-web-devicons")
 end)
