@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -203,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-go",
     url = "https://github.com/fatih/vim-go"
+  },
+  ["vim-obsession"] = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/vim-obsession",
+    url = "https://github.com/tpope/vim-obsession"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

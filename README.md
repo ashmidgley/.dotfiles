@@ -2,8 +2,16 @@ My local setup using [nvim](https://neovim.io), [tmux](https://github.com/tmux/t
 
 ### Install
 
-Install with [Ellipsis](https://github.com/ellipsis/ellipsis):
+Clone repo:
 
 ```
-$ ellipsis install ashmidgley/dotfiles
+git clone https://github.com/ashmidgley/dotfiles.github
 ```
+
+Run init script to symlink files into root directory:
+
+```
+sh init.sh
+```
+
+Open Rectangle, navigate to "Settings > Import" and select RectangleConfig.json.

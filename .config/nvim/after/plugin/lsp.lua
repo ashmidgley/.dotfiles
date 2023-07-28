@@ -7,6 +7,7 @@ lsp.ensure_installed({
 	"tsserver",
 	"html",
 	"tailwindcss",
+	"bashls",
 	-- "prettier",
 	-- "stylua",
 })
