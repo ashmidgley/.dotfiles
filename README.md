@@ -8,10 +8,16 @@ Clone repo:
 git clone https://github.com/ashmidgley/dotfiles.github
 ```
 
-Run init script to symlink files into root directory:
+Run install script to symlink files into root directory:
 
 ```
 sh init.sh
+```
+
+Install brew packages (optional):
+
+```
+brew bundle
 ```
 
 Open Rectangle, navigate to "Settings > Import" and select RectangleConfig.json.

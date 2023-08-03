@@ -27,10 +27,6 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
--- Copilot tab remap.
-vim.g.copilot_no_tab_map = true
-vim.keymap.set("i", "<C-g>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-
 -- vim-go remaps.
 vim.keymap.set("n", "<leader>ct", vim.cmd.GoCoverageToggle)
 vim.keymap.set("n", "<leader>ga", vim.cmd.GoAlternate)
@@ -40,3 +36,10 @@ vim.keymap.set("n", "<leader>gr", vim.cmd.GoRun)
 -- trouble.
 vim.keymap.set("n", "<leader>tt", vim.cmd.TroubleToggle)
 vim.keymap.set("n", "<leader>tr", vim.cmd.TroubleRefresh)
+
+-- LSP.
+vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+
+-- Copilot tab remap.
+-- vim.g.copilot_no_tab_map = true
+-- vim.keymap.set("i", "<C-g>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
