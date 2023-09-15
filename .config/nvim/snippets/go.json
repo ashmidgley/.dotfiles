@@ -1,0 +1,32 @@
+{
+  "if err != nil": {
+    "prefix": "ir",
+    "description": "Snippet for if err != nil"
+    "body": "if err != nil {\n\t${1:return ${2:nil, }${3:err}}\n}",
+  },
+  "for range statement": {
+    "prefix": "forr",
+    "description": "Snippet for a for range loop"
+    "body": "for ${1:_, }${2:v} := range ${3:v} {\n\t$0\n}",
+  },
+  "http ResponseWriter *Request": {
+    "prefix": "wr",
+    "description": "Snippet for http Response"
+    "body": "${1:w} http.ResponseWriter, ${2:r} *http.Request",
+  },
+  "table driven test": {
+    "prefix": "tdt",
+    "description": "Snippet for table driven test"
+    "body": "func Test$1(t *testing.T) {\n\ttestCases := []struct {\n\t\tdesc\tstring\n\t\t$2\n\t}{\n\t\t{\n\t\t\tdesc: \"$3\",\n\t\t\t$4\n\t\t},\n\t}\n\tfor _, tC := range testCases {\n\t\tt.Run(tC.desc, func(t *testing.T) {\n\t\t\t$0\n\t\t})\n\t}\n}",
+  },
+  "test": {
+    "prefix": "tf",
+    "description": "Snippet for Test function"
+    "body": "func Test$1(t *testing.T) {\n\t$0\n}",
+  },
+  "benchmark": {
+    "prefix": "bf",
+    "description": "Snippet for Benchmark function"
+    "body": "func Benchmark$1(b *testing.B) {\n\tfor ${2:i} := 0; ${2:i} < b.N; ${2:i}++ {\n\t\t$0\n\t}\n}",
+  }
+}

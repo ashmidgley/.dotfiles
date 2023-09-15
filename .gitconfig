@@ -1,0 +1,13 @@
+[user]
+    name = Ash Midgley
+    username = ashmidgley
+	email = ashleymidgley@protonmail.com
+
+[core]
+	editor = /opt/homebrew/bin/nvim
+
+[credential]
+	helper = osxkeychain
+
+[web]
+	browser = google-chrome

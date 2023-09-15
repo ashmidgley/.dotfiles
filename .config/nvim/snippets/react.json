@@ -1,0 +1,7 @@
+{
+  "component": {
+    "prefix": ["rfc", "component"],
+    "description": "Boilerplate for a React functional component",
+    "body": "import React from 'react'\n\nexport const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}"
+  }
+}
