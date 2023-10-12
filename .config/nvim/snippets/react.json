@@ -3,5 +3,30 @@
     "prefix": ["rfc", "component"],
     "description": "Boilerplate for a React functional component",
     "body": "import React from 'react'\n\nexport const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}"
+  },
+  "story": {
+    "prefix": ["sb", "story"],
+    "description": "Boilerplate for a Storybook module.",
+    "body": "import React from 'react'\nimport { Meta, StoryFn } from '@storybook/react'\n\nexport default {\n\ttitle: 'KX Components/Atoms/${1:Component}',\n\tcomponent: Component,\n} as Meta\n\nconst Template: StoryFn<ComponentProps> = (args: ComponentProps) => <Component {...args} />\n\nexport const Default = Template.bind({})\nDefault.args = {}\n"
+  },
+  "styled-component": {
+    "prefix": ["sc", "styled-component"],
+    "description": "Boilerplate for a Styled Component.",
+    "body": "import styled from 'styled-components'\n\nexport enum EComponentVariant {\n\tsolid = 'solid',\n\toutline = 'outline',\n}\n\nexport const ${1:SComponent} = styled.div<{ variant: EComponentVariant; }>`\n\tdisplay: inline-flex;\n`"
+  },
+  "test-suite": {
+    "prefix": ["ts", "test-suite"],
+    "description": "Boilerplate for a suite of React Testing Library tests.",
+    "body": "import React from 'react'\nimport { screen, render } from '../../utils/test-utils'\nimport { faker } from '@faker-js/faker'\n\ndescribe('atoms › ${1:Component}', () => {\n\ttest('should render the correct value', () => {\n\t\tconst value = faker.word.noun()\n\t\trender(<Component value={value} />)\n\t\texpect(screen.queryByTestId('component')).toHaveTextContent(value)\n\t})\n})"
+  },
+  "test": {
+    "prefix": ["tt", "test"],
+    "description": "Boilerplate for a React Testing Library test.",
+    "body": "\ttest('should ${1:...}', () => {\n\t\tconst value = faker.word.noun()\n\t\trender(<Component value={value} />)\n\t\texpect(screen.queryByTestId('component')).toHaveTextContent(value)\n\t\t})"
+  },
+  "barrel-index": {
+    "prefix": ["bi", "bp", "barrel-index"],
+    "description": "Boilerplate for a barrel pattern index file.",
+    "body": "export * from './${1:Component}'"
   }
 }
