@@ -14,10 +14,39 @@ Run install script to symlink files into root directory:
 sh init.sh
 ```
 
-Install brew packages (optional):
+Follow these instructions to setup terminal:
+https://www.josean.com/posts/terminal-setup
+
+Install brew packages:
 
 ```
 brew bundle
 ```
 
-Open Rectangle, navigate to "Settings > Import" and select RectangleConfig.json.
+Install TPM:
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Enter tmux and enter config:
+
+```
+tmux
+nvim ~/.tmux.conf
+```
+
+Install TPM packages using CTRL-a + i.
+
+Follow Packer quickstart:
+https://github.com/wbthomason/packer.nvim
+
+Open packer config, source then install packages:
+
+```
+nvim ~/.config/nvim/lua/ashmidgley/packer.lua
+:so %
+:PackerSync
+```
+
+Download and install Rectangle, then navigate to "Settings > Import" and select RectangleConfig.json.
