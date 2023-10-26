@@ -5,6 +5,7 @@
 
 [core]
 	editor = /opt/homebrew/bin/nvim
+    pull.rebase = false
 
 [credential]
 	helper = osxkeychain
