@@ -5,10 +5,12 @@
 
 [core]
 	editor = /opt/homebrew/bin/nvim
-    pull.rebase = false
 
 [credential]
 	helper = osxkeychain
 
 [web]
 	browser = google-chrome
+
+[pull]
+    rebase = false
